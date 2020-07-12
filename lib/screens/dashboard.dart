@@ -1,4 +1,4 @@
-import 'package:bytebank_persistencia/database/dao/contact_dao.dart';
+import 'package:bytebank_persistencia/components/response_dialog.dart';
 import 'package:bytebank_persistencia/screens/contacts_list.dart';
 import 'package:bytebank_persistencia/screens/transactions_list.dart';
 import 'package:flutter/material.dart';
@@ -38,6 +38,13 @@ class Dashboard extends StatelessWidget {
                         'Transaction Feed',
                         Icons.description,
                         onClick: () => _showTransactionsList(context),
+                      ),
+                      FeatureItem(
+                        'New Feature',
+                        Icons.assistant_photo,
+                        onClick: () => showDialog(context: context, builder: (contextDialog) {
+                          return SuccessDialog('Soon a new Feature here!',title: "Wait there", icon: Icons.access_time,);
+                        }),
                       ),
                     ],
                   ),

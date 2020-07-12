@@ -31,6 +31,7 @@ Para que as requisições funcionem você deve baixar o Servidor java disponíve
 - Extrair o pacote zip
 - Abrir o terminal e navegar até a pasta do projeto Ex: "C:/Usuario/Downloads/servidor"  
 - Executar o comando "java -jar server.jar"
+- Senha padrão para Transação : "1000"
 
 Para que o emulador consiga fazer as requisições você deve colocar seu IP de rede no arquivo "Webclient.dart" linha
 - lib/http/Webclients.dart
